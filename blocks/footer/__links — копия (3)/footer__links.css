@@ -1,0 +1,20 @@
+.footer__links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 18px;
+}
+
+@media screen and (max-width: 320px) {
+    .footer__links {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        row-gap: 32px;
+    }
+}

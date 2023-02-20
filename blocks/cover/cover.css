@@ -1,0 +1,47 @@
+.cover {
+    margin: 0 auto;
+    margin-top: 92px;
+    max-width: 1184px;
+    height: 740px;
+    position: relative;
+    background-image: url(../../images/__background.jpg);
+    background-size: cover;
+}
+
+@media screen and (max-width: 1024px) {
+    .cover {
+        max-width: 100%;
+        height: 640px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cover {
+        max-width: 100%;
+        height: 480px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .cover {
+        max-width: 100%;
+        height: 200px;
+    }
+}
+
+.cover::before {
+	content: 'shadow';
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(0, 0, 0, 0.25);
+}
+
+.cover:hover {
+	opacity: 0.8;
+}
