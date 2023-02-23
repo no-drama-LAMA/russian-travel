@@ -11,6 +11,10 @@
         "image paragraphs";
 }
 
+.place:first-child {
+    margin-top: 0;
+}
+
 @media screen and (max-width: 1024px) {
     .place {
         grid-template-columns: 47.413793% 1fr;
@@ -20,7 +24,7 @@
 
 @media screen and (max-width: 768px) {
     .place {
-        margin-top: 76px;
+        margin-top: 73px;
         grid-template-columns: 47.222222% 1fr;
         column-gap: 28px;
     }
@@ -35,5 +39,6 @@
         "website"
         "image"
         "paragraphs";
+        row-gap: 32px;
     }
 }
